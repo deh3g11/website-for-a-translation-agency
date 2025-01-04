@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Подайте онлайн поръчка за превод на документи с Адапт България. Бързо, лесно и удобно с опции за множество езици.">
+    <meta name="keywords" content="онлайн поръчка, превод на документи, преводи, адапт България, преводаческа агенция, професионални преводи">
+    <meta name="author" content="Адапт България">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://example.com/orders.html">
+    <title>Онлайн поръчка за превод - Адапт България</title>
+</head>
+<body>
+
+<header>
+    <div class="left-section">
+        <img src="../images/logo.png" alt="Лого на Адапт България - Онлайн поръчка за превод">
+    </div>
+    <nav>
+        <a href="index.html">Начало</a>
+        <a href="about.html">За нас</a>
+        <a href="services.html">Услуги</a>
+        <a href="orders.html">Поръчки</a>
+        <a href="careers.html">Кариери</a>
+        <a href="offices.html">Офиси</a>
+    </nav>
+</header>
+
+<main class="order-form-page">
+    <h1>Онлайн поръчка за превод</h1>
+    <p>Моля, попълнете всички полета</p>
+
+    <form class="order-form" action="submit_order.php" method="post" enctype="multipart/form-data">
+        <label for="name">Име, фамилия:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Телефон / Факс:</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label for="mobile">Мобилен телефон:</label>
+        <input type="text" id="mobile" name="mobile" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="address">Точен адрес:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="language">Изберете език за превод:</label>
+        <select id="language" name="language" required>
+            <option value="" disabled selected>Изберете език</option>
+            <option value="Английски">Английски</option>
+            <option value="Немски">Немски</option>
+            <option value="Френски">Френски</option>
+            <option value="Руски">Руски</option>
+            <!-- ... останалите езици ... -->
+        </select>
+
+        <label for="file">Качете файл за превод:</label>
+        <input type="file" id="file" name="file" required>
+
+        <label for="additional-info">Допълнителни изисквания:</label>
+        <textarea id="additional-info" name="additional-info"></textarea>
+
+        <fieldset>
+            <legend>Начин на плащане:</legend>
+            <label><input type="radio" name="payment" value="bank" required> Банков превод</label><br>
+            <label><input type="radio" name="payment" value="cash-on-delivery"> Наложен платеж</label><br>
+            <label><input type="radio" name="payment" value="postal-order"> Пощенски запис</label><br>
+            <label><input type="radio" name="payment" value="cash-in-office"> В брой в офиса</label>
+        </fieldset>
+
+        <label><input type="checkbox" name="terms" required> Запознах се и приемам <a href="terms.html">общите условия</a>.</label>
+
+        <button type="submit">Изпрати</button>
+    </form>
+
+    <div class="additional-info">
+        <p>Получавате <strong>10% отстъпка</strong> при всяка онлайн поръчка! Потвърждението ще бъде изпратено на вашия e-mail.</p>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-top">
+        <div class="footer-nav">
+            <a href="index.html">Начало</a>
+            <a href="about.html">За нас</a>
+            <a href="services.html">Услуги</a>
+            <a href="orders.html">Поръчки</a>
+            <a href="careers.html">Кариери</a>
+            <a href="offices.html">Офиси</a>
+        </div>
+        <div class="footer-block contact-info">
+            <h3>Контакти</h3>
+            <hr>
+            <p>гр. София, бул. „Евлоги и Христо Георгиеви“ № 77</p>
+            <p>Тел./Факс: +359 2 989 98 67, GSM: +359 888 888 400</p>
+            <p>Е-mail: adapt@abv.bg</p>
+            <p>гр. Севлиево, ул. „Хр. Спиридонов“ № 6</p>
+            <p>Тел. +359 675 350 59, GSM: +359 885 473 186</p>
+            <p>Е-mail: adapt_s@abv.bg</p>
+        </div>
+        <div class="footer-block social-icons">
+            <h3>Последвайте ни в социалните мрежи</h3>
+            <hr>
+            <a href="https://x.com/" target="_blank">&#x1F426; Twitter</a>
+            <a href="https://www.facebook.com/adapt.bulgaria/" target="_blank">&#x1F464; Facebook</a>
+            <a href="https://www.linkedin.com/" target="_blank">&#x1F4C8; LinkedIn</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 Адапт България. Всички права запазени. Сайтът е направен с учебна цел.</p>
+    </div>
+</footer>
+
+
+</body>
+</html>
